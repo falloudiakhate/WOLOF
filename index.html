@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Wolof - La Langue du Sénégal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="logo">Learn Wolof</span>
+        </div>
+        <script src="script.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Initialize particles
+                particlesJS('hero-particles', {
+                    particles: {
+                        number: { value: 100, density: { enable: true, value_area: 800 } },
+                        color: { value: '#00853f' },
+                        shape: { type: 'circle' },
+                        opacity: {
+                            value: 0.5,
+                            random: true,
+                            animation: { enable: true, speed: 1, opacity_min: 0.1, sync: false }
+                        },
+                        size: {
+                            value: 3,
+                            random: true,
+                            animation: { enable: true, speed: 2, size_min: 0.1, sync: false }
+                        },
+                        line_linked: {
+                            enable: true,
+                            distance: 150,
+                            color: '#00853f',
+                            opacity: 0.2,
+                            width: 1
+                        },
+                        move: {
+                            enable: true,
+                            speed: 2,
+                            direction: 'none',
+                            random: true,
+                            straight: false,
+                            out_mode: 'out',
+                            bounce: false,
+                            attract: { enable: true, rotateX: 600, rotateY: 1200 }
+                        }
+                    },
+                    interactivity: {
+                        detect_on: 'canvas',
+                        events: {
+                            onhover: { enable: true, mode: 'grab' },
+                            onclick: { enable: true, mode: 'push' },
+                            resize: true
+                        },
+                        modes: {
+                            grab: { distance: 140, line_linked: { opacity: 0.5 } },
+                            push: { particles_nb: 4 }
+                        }
+                    },
+                    retina_detect: true
+                });
+            });
+        </script>
+        <div class="nav-links">
+            <a href="#" class="active">Accueil</a>
+            <a href="#">Cours</a>
+            <a href="#">Forum</a>
+            <a href="#">Blog</a>
+            <a href="#">Boutique</a>
+        </div>
+        <div class="nav-right">
+            <div class="nav-auth">
+                <button class="btn-login">Connexion</button>
+                <button class="btn-signup">Inscription</button>
+            </div>
+            <div class="language-selector">
+                <button class="lang-btn">
+                    <img src="https://flagcdn.com/w20/fr.png" alt="Français" class="lang-flag current-flag">
+                    <span class="current-lang">FR</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="lang-dropdown">
+                    <a href="#" class="lang-option active" data-lang="fr">
+                        <img src="https://flagcdn.com/w20/fr.png" alt="Français" class="lang-flag">
+                        <span>Français</span>
+                    </a>
+                    <a href="#" class="lang-option" data-lang="en">
+                        <img src="https://flagcdn.com/w20/gb.png" alt="English" class="lang-flag">
+                        <span>English</span>
+                    </a>
+                    <a href="#" class="lang-option" data-lang="de">
+                        <img src="https://flagcdn.com/w20/de.png" alt="Deutsch" class="lang-flag">
+                        <span>Deutsch</span>
+                    </a>
+                    <a href="#" class="lang-option" data-lang="wo">
+                        <img src="https://flagcdn.com/w20/sn.png" alt="Wolof" class="lang-flag">
+                        <span>Wolof</span>
+                    </a>
+                </div>
+            </div>
+            <button class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-lines"></div>
+        <div class="hero-glow"></div>
+        <div id="hero-particles"></div>
+        <div class="hero-slider">
+            <div class="slide active">
+                <img src="./imgs/imaga-1.png" alt="Culture sénégalaise" class="slide-bg">
+                <div class="hero-text-container">
+                    <div class="slide-content">
+                        <span class="slide-badge" data-aos="fade-down">Langue nationale</span>
+                        <h2 class="slide-subtitle" data-aos="fade-up">
+                            <span class="text-accent">Découvrez</span>
+                            la langue du Sénégal
+                        </h2>
+                        <div class="slide-features">
+                            <div class="feature-item" data-aos="fade-right" data-aos-delay="100">
+                                <i class="fas fa-users"></i>
+                                <span>80% des Sénégalais</span>
+                            </div>
+                            <div class="feature-item" data-aos="fade-right" data-aos-delay="200">
+                                <i class="fas fa-globe-africa"></i>
+                                <span>Langue officielle</span>
+                            </div>
+                        </div>
+                        <p class="slide-text" data-aos="fade-up" data-aos-delay="300">
+                            Immergez-vous dans la richesse de la langue wolof, une langue vivante au cœur de la culture
+                            sénégalaise
+                        </p>
+                        <div class="slide-cta" data-aos="fade-up" data-aos-delay="400">
+                            <button class="cta-button">
+                                <span>Commencer l'aventure</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <a href="#courses" class="text-link">
+                                <i class="fas fa-play-circle"></i>
+                                Voir nos cours
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./imgs/image-2.png" alt="Traditions wolof" class="slide-bg">
+                <div class="hero-text-container">
+                    <div class="slide-content">
+                        <span class="slide-badge" data-aos="fade-down">Culture</span>
+                        <h2 class="slide-subtitle" data-aos="fade-up">
+                            <span class="text-accent">Plongez</span> dans une
+                            culture millénaire
+                        </h2>
+                        <div class="slide-features">
+                            <div class="feature-item" data-aos="fade-right" data-aos-delay="100">
+                                <i class="fas fa-history"></i>
+                                <span>Histoire riche</span>
+                            </div>
+                            <div class="feature-item" data-aos="fade-right" data-aos-delay="200">
+                                <i class="fas fa-music"></i>
+                                <span>Traditions vivantes</span>
+                            </div>
+                        </div>
+                        <p class="slide-text" data-aos="fade-up" data-aos-delay="300">
+                            Découvrez les traditions, la musique et l'art de vivre wolof à travers notre plateforme
+                            immersive
+                        </p>
+                        <div class="slide-cta" data-aos="fade-up" data-aos-delay="400">
+                            <button class="cta-button">
+                                <span>Explorer la culture</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <a href="#about" class="text-link">
+                                <i class="fas fa-info-circle"></i>
+                                En savoir plus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./imgs/image-3.png" alt="Communauté wolof" class="slide-bg">
+                <div class="hero-text-container">
+                    <div class="slide-content">
+                        <span class="slide-badge" data-aos="fade-down">Communauté</span>
+                        <h2 class="slide-subtitle" data-aos="fade-up">
+                            <span class="text-accent">Rejoignez</span> une
+                            communauté passionnée
+                        </h2>
+                        <div class="slide-features">
+                            <div class="feature-item" data-aos="fade-right" data-aos-delay="100">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>5000+ Étudiants</span>
+                            </div>
+                            <div class="feature-item" data-aos="fade-right" data-aos-delay="200">
+                                <i class="fas fa-comments"></i>
+                                <span>Forum actif</span>
+                            </div>
+                        </div>
+                        <p class="slide-text" data-aos="fade-up" data-aos-delay="300">
+                            Échangez avec des apprenants du monde entier et progressez ensemble dans votre apprentissage
+                        </p>
+                        <div class="slide-cta" data-aos="fade-up" data-aos-delay="400">
+                            <button class="cta-button">
+                                <span>Rejoindre maintenant</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <a href="#community" class="text-link">
+                                <i class="fas fa-users"></i>
+                                Voir la communauté
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-controls">
+                <div class="progress-bars">
+                    <div class="progress-bar active"></div>
+                    <div class="progress-bar"></div>
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+    </header>
+
+    <section class="about-us">
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <span class="section-badge">À propos de nous</span>
+                    <h2>La première plateforme <span class="highlight">d'apprentissage du Wolof</span> en ligne</h2>
+                    <p>Notre mission est de préserver et promouvoir la langue wolof à travers une expérience
+                        d'apprentissage innovante et immersive. Nous combinons technologie moderne et traditions pour
+                        vous offrir le meilleur de la culture sénégalaise.</p>
+                    <div class="about-stats">
+                        <div class="stat-box">
+                            <span class="stat-value">10+</span>
+                            <span class="stat-label">Années d'expérience</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-value">50k+</span>
+                            <span class="stat-label">Apprenants satisfaits</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-value">100%</span>
+                            <span class="stat-label">Engagement culturel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-media" data-aos="fade-left">
+                    <div class="media-tabs">
+                        <button class="media-tab active" data-media="image">
+                            <i class="fas fa-image"></i>
+                            <span>Notre équipe</span>
+                        </button>
+                        <button class="media-tab" data-media="video">
+                            <i class="fas fa-play"></i>
+                            <span>Découvrir</span>
+                        </button>
+                    </div>
+                    <div class="media-content">
+                        <div class="image-wrapper active" data-media-content="image">
+                            <div class="pattern-bg"></div>
+                            <img src="./imgs/image-2.png" alt="Notre équipe" class="main-image">
+                            <div class="experience-badge">
+                                <span class="number">10</span>
+                                <span class="text">ans d'expertise<br>pédagogique</span>
+                            </div>
+                        </div>
+                        <div class="video-wrapper" data-media-content="video">
+                            <div class="pattern-bg"></div>
+                            <div class="video-container">
+                                <video poster="./imgs/image-3.png" class="main-video">
+                                    <source src="https://example.com/video-presentation-wolof.mp4" type="video/mp4">
+                                    Votre navigateur ne supporte pas la lecture de vidéos.
+                                </video>
+                                <div class="video-overlay">
+                                    <button class="play-button">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                    <div class="video-text">
+                                        <h3>Découvrez notre méthode</h3>
+                                        <p>Une approche innovante de l'apprentissage du Wolof</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience-badge">
+                                <span class="number">10K+</span>
+                                <span class="text">étudiants<br>satisfaits</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="features" id="features">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-badge">Avantages</span>
+            <h2>Pourquoi apprendre le Wolof ?</h2>
+            <p class="section-description">Découvrez les nombreux avantages d'apprendre la langue wolof, une porte
+                ouverte sur la culture sénégalaise</p>
+        </div>
+        <div class="feature-grid">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Cours interactifs</h3>
+                <p>Apprenez à votre rythme avec nos cours vidéo interactifs et nos exercices pratiques adaptés à tous
+                    les niveaux</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Communauté active</h3>
+                <p>Rejoignez une communauté dynamique d'apprenants et de locuteurs natifs pour pratiquer et progresser
+                    ensemble</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-icon">
+                    <i class="fas fa-globe-africa"></i>
+                </div>
+                <h3>Culture sénégalaise</h3>
+                <p>Immergez-vous dans la riche culture sénégalaise à travers la langue, les traditions et l'art de vivre
+                </p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Apprentissage mobile</h3>
+                <p>Accédez à vos leçons partout et à tout moment grâce à notre application mobile intuitive</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>Certification officielle</h3>
+                <p>Obtenez une certification reconnue pour valider votre niveau en langue wolof</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="feature-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3>Opportunités professionnelles</h3>
+                <p>Ouvrez-vous à de nouvelles opportunités professionnelles au Sénégal et en Afrique de l'Ouest</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses">
+        <h2 data-aos="fade-up">Nos cours populaires</h2>
+        <div class="course-filters" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="debutant">Débutant</button>
+            <button class="filter-btn" data-filter="intermediaire">Intermédiaire</button>
+            <button class="filter-btn" data-filter="avance">Avancé</button>
+        </div>
+        <div class="course-grid">
+            <div class="course-card" data-aos="fade-up" data-aos-delay="200" data-category="debutant">
+                <div class="course-badge">Populaire</div>
+                <img src="./imgs/image-2.png" alt="Cours débutant">
+                <div class="course-content">
+                    <div class="course-tags">
+                        <span class="tag">Débutant</span>
+                        <span class="tag">4 heures</span>
+                    </div>
+                    <h3>Wolof pour débutants</h3>
+                    <p>Commencez votre voyage avec les bases</p>
+                    <div class="course-stats">
+                        <span><i class="fas fa-users"></i> 1.2k apprenants</span>
+                        <span><i class="fas fa-star"></i> 4.8/5</span>
+                    </div>
+                    <button class="btn-course">En savoir plus</button>
+                </div>
+            </div>
+            <div class="course-card" data-aos="fade-up" data-aos-delay="300" data-category="intermediaire">
+                <div class="course-badge">Nouveau</div>
+                <img src="./imgs/image-2.png" alt="Cours intermédiaire">
+                <div class="course-content">
+                    <div class="course-tags">
+                        <span class="tag">Intermédiaire</span>
+                        <span class="tag">6 heures</span>
+                    </div>
+                    <h3>Conversation courante</h3>
+                    <p>Perfectionnez votre pratique orale</p>
+                    <div class="course-stats">
+                        <span><i class="fas fa-users"></i> 850 apprenants</span>
+                        <span><i class="fas fa-star"></i> 4.6/5</span>
+                    </div>
+                    <button class="btn-course">En savoir plus</button>
+                </div>
+            </div>
+            <div class="course-card" data-aos="fade-up" data-aos-delay="400" data-category="avance">
+                <img src="./imgs/image-2.png" alt="Cours avancé">
+                <div class="course-content">
+                    <div class="course-tags">
+                        <span class="tag">Avancé</span>
+                        <span class="tag">8 heures</span>
+                    </div>
+                    <h3>Culture et expressions</h3>
+                    <p>Maîtrisez les subtilités de la langue</p>
+                    <div class="course-stats">
+                        <span><i class="fas fa-users"></i> 620 apprenants</span>
+                        <span><i class="fas fa-star"></i> 4.9/5</span>
+                    </div>
+                    <button class="btn-course">En savoir plus</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="statistics" data-aos="fade-up">
+        <div class="stat-container">
+            <div class="stat-item">
+                <div class="stat-number" data-count="5000">0</div>
+                <div class="stat-label">Apprenants</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="50">0</div>
+                <div class="stat-label">Cours</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="12">0</div>
+                <div class="stat-label">Professeurs</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="98">0</div>
+                <div class="stat-label">% Satisfaction</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="testimonials-header" data-aos="fade-up">
+            <span class="section-badge">Témoignages</span>
+            <h2>Ce que disent nos apprenants</h2>
+            <p class="section-description">Découvrez les retours d'expérience de notre communauté d'apprenants</p>
+        </div>
+        <div class="testimonial-slider">
+            <div class="testimonial-track">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-content">
+                        <p>Une expérience d'apprentissage incroyable ! Je peux maintenant parler wolof avec confiance et
+                            échanger avec ma famille au Sénégal.</p>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-image">
+                            <img src="./imgs/image-2.png" alt="Marie Dubois">
+                        </div>
+                        <div class="author-info">
+                            <h4>Marie Dubois</h4>
+                            <span>Étudiante depuis 6 mois</span>
+                            <div class="author-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Paris, France
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-content">
+                        <p>Les cours sont parfaitement structurés et les professeurs sont exceptionnels. J'ai fait des
+                            progrès remarquables en seulement quelques mois.</p>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-image">
+                            <img src="./imgs/image-2.png" alt="John Smith">
+                        </div>
+                        <div class="author-info">
+                            <h4>John Smith</h4>
+                            <span>Étudiant depuis 3 mois</span>
+                            <div class="author-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Londres, UK
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-content">
+                        <p>Grâce à Learn Wolof, j'ai pu découvrir une culture fascinante et me faire des amis du monde
+                            entier. Une expérience enrichissante !</p>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-image">
+                            <img src="./imgs/image-2.png" alt="Sophie Martin">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sophie Martin</h4>
+                            <span>Étudiante depuis 1 an</span>
+                            <div class="author-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Montréal, Canada
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <div class="testimonial-dots"></div>
+                <div class="testimonial-arrows">
+                    <button class="arrow-prev">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button class="arrow-next">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog" id="blog">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-badge">Blog</span>
+            <h2>Derniers articles</h2>
+            <p class="section-description">Découvrez nos derniers articles sur la langue et la culture wolof</p>
+        </div>
+        <div class="blog-grid">
+            <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="blog-image">
+                    <img src="./imgs/image-2.png" alt="Les origines du Wolof">
+                    <span class="blog-category">Culture</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> 10 Avril 2025</span>
+                        <span><i class="far fa-clock"></i> 5 min de lecture</span>
+                    </div>
+                    <h3>Les origines de la langue Wolof</h3>
+                    <p>Découvrez l'histoire fascinante de la langue wolof et son évolution à travers les siècles...</p>
+                    <a href="#" class="blog-link">
+                        Lire la suite <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="blog-image">
+                    <img src="./imgs/image-3.png" alt="Expressions courantes">
+                    <span class="blog-category">Apprentissage</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> 8 Avril 2025</span>
+                        <span><i class="far fa-clock"></i> 3 min de lecture</span>
+                    </div>
+                    <h3>10 expressions wolof à connaître</h3>
+                    <p>Les expressions idiomatiques les plus utilisées dans la conversation quotidienne...</p>
+                    <a href="#" class="blog-link">
+                        Lire la suite <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="blog-image">
+                    <img src="./imgs/imaga-1.png" alt="Traditions sénégalaises">
+                    <span class="blog-category">Traditions</span>
+                </div>
+                <div class="blog-content">
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> 5 Avril 2025</span>
+                        <span><i class="far fa-clock"></i> 4 min de lecture</span>
+                    </div>
+                    <h3>La Teranga : l'art de l'hospitalité</h3>
+                    <p>Comprendre la célèbre hospitalité sénégalaise à travers la langue wolof...</p>
+                    <a href="#" class="blog-link">
+                        Lire la suite <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+        </div>
+        <div class="blog-cta" data-aos="fade-up">
+            <a href="#" class="btn-view-all">
+                Voir tous les articles
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <section class="partners">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-badge">Partenaires</span>
+            <h2>Ils nous font confiance</h2>
+            <p class="section-description">Des institutions et organisations reconnues qui soutiennent notre mission
+                éducative</p>
+        </div>
+        <div class="partners-container">
+            <div class="partner-grid" data-aos="fade-up">
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <img src="./imgs/image-2.png" alt="Université de Dakar">
+                    </div>
+                    <div class="partner-info">
+                        <h3>Université de Dakar</h3>
+                        <p>Institution académique de référence</p>
+                    </div>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <img src="./imgs/image-2.png" alt="Alliance Française">
+                    </div>
+                    <div class="partner-info">
+                        <h3>Alliance Française</h3>
+                        <p>Centre culturel et linguistique</p>
+                    </div>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <img src="./imgs/image-2.png" alt="Ministère de l'Éducation">
+                    </div>
+                    <div class="partner-info">
+                        <h3>Ministère de l'Éducation</h3>
+                        <p>Soutien gouvernemental officiel</p>
+                    </div>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <img src="./imgs/image-2.png" alt="Institut Culturel">
+                    </div>
+                    <div class="partner-info">
+                        <h3>Institut Culturel</h3>
+                        <p>Promotion de la culture sénégalaise</p>
+                    </div>
+                </div>
+            </div>
+            <div class="partner-cta" data-aos="fade-up">
+                <a href="#" class="btn-become-partner">
+                    <span>Devenir partenaire</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <h3>Learn Wolof</h3>
+                    <p>La première plateforme d'apprentissage du Wolof en ligne. Découvrez la richesse de la langue et
+                        de la culture sénégalaise.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-home"></i>Accueil</a></li>
+                            <li><a href="#"><i class="fas fa-graduation-cap"></i>Cours</a></li>
+                            <li><a href="#"><i class="fas fa-comments"></i>Forum</a></li>
+                            <li><a href="#"><i class="fas fa-blog"></i>Blog</a></li>
+                            <li><a href="#"><i class="fas fa-store"></i>Boutique</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-question-circle"></i>FAQ</a></li>
+                            <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
+                            <li><a href="#"><i class="fas fa-book"></i>Documentation</a></li>
+                            <li><a href="#"><i class="fas fa-shield-alt"></i>Confidentialité</a></li>
+                            <li><a href="#"><i class="fas fa-file-contract"></i>Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Communauté</h3>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-users"></i>Nos étudiants</a></li>
+                            <li><a href="#"><i class="fas fa-chalkboard-teacher"></i>Nos professeurs</a></li>
+                            <li><a href="#"><i class="fas fa-newspaper"></i>Actualités</a></li>
+                            <li><a href="#"><i class="fas fa-handshake"></i>Partenaires</a></li>
+                            <li><a href="#"><i class="fas fa-heart"></i>Nous soutenir</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Restez informé de nos actualités et nouvelles formations</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" placeholder="Votre email" required>
+                            <button type="submit" class="btn-subscribe">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="app-badges">
+                        <a href="#" class="app-badge">
+                            <img src="./imgs/image-2.png" alt="Disponible sur l'App Store">
+                        </a>
+                        <a href="#" class="app-badge">
+                            <img src="./imgs/image-2.png" alt="Disponible sur Google Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-info">
+                <p>&copy; 2025 Learn Wolof. Tous droits réservés.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Mentions légales</a>
+                    <span class="separator">•</span>
+                    <a href="#">Confidentialité</a>
+                    <span class="separator">•</span>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="animations.js"></script>
+    <script src="slider.js"></script>
+    <script src="script.js"></script>
+    <script src="particles.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            particlesJS('hero-particles');
+        });
+    </script>
+</body>
+
+</html>
