@@ -96,15 +96,36 @@ document.addEventListener('DOMContentLoaded', () => {
         goToSlide(currentSlide);
     }, 5000);
 
-    // Navigation mobile et autres fonctionnalités existantes
+    // Gestion du menu mobile
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
     const navAuth = document.querySelector('.nav-auth');
+    const navOverlay = document.querySelector('.nav-overlay');
+    const body = document.body;
 
-    navToggle.addEventListener('click', () => {
+    function toggleMenu() {
+        navToggle.classList.toggle('active');
         navLinks.classList.toggle('active');
         navAuth.classList.toggle('active');
-        navToggle.classList.toggle('active');
+        navOverlay.classList.toggle('active');
+        body.style.overflow = body.style.overflow === 'hidden' ? '' : 'hidden';
+    }
+
+    navToggle.addEventListener('click', toggleMenu);
+    navOverlay.addEventListener('click', toggleMenu);
+
+    // Fermer le menu quand on clique sur un lien
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            toggleMenu();
+        });
+    });
+
+    // Fermer le menu quand on redimensionne l'écran au-dessus de 991px
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 991 && navLinks.classList.contains('active')) {
+            toggleMenu();
+        }
     });
 
     // Animation de la navbar au scroll
