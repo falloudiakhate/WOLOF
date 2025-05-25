@@ -8,6 +8,46 @@ document.addEventListener('DOMContentLoaded', () => {
         mirror: true
     });
 
+    // Slider de la bannière
+    const slides = document.querySelectorAll('.slide');
+    const progressBars = document.querySelectorAll('.progress-bar');
+    let currentBannerSlide = 0;
+    const slideInterval = 5000; // 5 secondes par slide
+
+    function nextSlide() {
+        // Retirer la classe active du slide et de la barre de progression actuels
+        slides[currentBannerSlide].classList.remove('active');
+        progressBars[currentBannerSlide].classList.remove('active');
+        
+        // Passer au slide suivant
+        currentBannerSlide = (currentBannerSlide + 1) % slides.length;
+        
+        // Ajouter la classe active au nouveau slide et à sa barre de progression
+        slides[currentBannerSlide].classList.add('active');
+        progressBars[currentBannerSlide].classList.add('active');
+    }
+
+    // Initialiser le premier slide
+    slides[0].classList.add('active');
+    progressBars[0].classList.add('active');
+
+    // Démarrer le défilement automatique
+    setInterval(nextSlide, slideInterval);
+
+    // Permettre le clic sur les barres de progression pour changer de slide
+    progressBars.forEach((bar, index) => {
+        bar.addEventListener('click', () => {
+            // Retirer la classe active du slide et de la barre actuels
+            slides[currentBannerSlide].classList.remove('active');
+            progressBars[currentBannerSlide].classList.remove('active');
+            
+            // Activer le nouveau slide
+            currentBannerSlide = index;
+            slides[currentBannerSlide].classList.add('active');
+            progressBars[currentBannerSlide].classList.add('active');
+        });
+    });
+
     // Filtres de cours
     const filterButtons = document.querySelectorAll('.filter-btn');
     const courseCards = document.querySelectorAll('.course-card');

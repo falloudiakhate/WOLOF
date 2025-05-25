@@ -4,73 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn Wolof - La Langue du Sénégal</title>
+    <title>Kepparu Wolof - La Langue du Sénégal</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
 </head>
 
 <body>
     <div class="nav-overlay"></div>
     <nav class="navbar">
         <div class="nav-brand">
-            <span class="logo">Learn Wolof</span>
+            <span class="logo">Kepparu Wolof</span>
         </div>
         <script src="script.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                // Initialize particles
-                particlesJS('hero-particles', {
-                    particles: {
-                        number: { value: 100, density: { enable: true, value_area: 800 } },
-                        color: { value: '#00853f' },
-                        shape: { type: 'circle' },
-                        opacity: {
-                            value: 0.5,
-                            random: true,
-                            animation: { enable: true, speed: 1, opacity_min: 0.1, sync: false }
-                        },
-                        size: {
-                            value: 3,
-                            random: true,
-                            animation: { enable: true, speed: 2, size_min: 0.1, sync: false }
-                        },
-                        line_linked: {
-                            enable: true,
-                            distance: 150,
-                            color: '#00853f',
-                            opacity: 0.2,
-                            width: 1
-                        },
-                        move: {
-                            enable: true,
-                            speed: 2,
-                            direction: 'none',
-                            random: true,
-                            straight: false,
-                            out_mode: 'out',
-                            bounce: false,
-                            attract: { enable: true, rotateX: 600, rotateY: 1200 }
-                        }
-                    },
-                    interactivity: {
-                        detect_on: 'canvas',
-                        events: {
-                            onhover: { enable: true, mode: 'grab' },
-                            onclick: { enable: true, mode: 'push' },
-                            resize: true
-                        },
-                        modes: {
-                            grab: { distance: 140, line_linked: { opacity: 0.5 } },
-                            push: { particles_nb: 4 }
-                        }
-                    },
-                    retina_detect: true
-                });
-            });
-        </script>
         <div class="nav-links">
             <a href="#" class="active">Accueil</a>
             <a href="#">Cours</a>
@@ -119,16 +66,15 @@
     <header class="hero">
         <div class="hero-lines"></div>
         <div class="hero-glow"></div>
-        <div id="hero-particles"></div>
         <div class="hero-slider">
             <div class="slide active">
-                <img src="./imgs/imaga-1.png" alt="Culture sénégalaise" class="slide-bg">
+                <img src="./imgs/banner-2.png" alt="Culture sénégalaise" class="slide-bg">
                 <div class="hero-text-container">
                     <div class="slide-content">
                         <span class="slide-badge" data-aos="fade-down">Langue nationale</span>
                         <h2 class="slide-subtitle" data-aos="fade-up">
                             <span class="text-accent">Découvrez</span>
-                            la langue du Sénégal
+                            le Wolof
                         </h2>
                         <div class="slide-features">
                             <div class="feature-item" data-aos="fade-right" data-aos-delay="100">
@@ -158,7 +104,7 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="./imgs/image-2.png" alt="Traditions wolof" class="slide-bg">
+                <img src="./imgs/banner-1.png" alt="Traditions wolof" class="slide-bg">
                 <div class="hero-text-container">
                     <div class="slide-content">
                         <span class="slide-badge" data-aos="fade-down">Culture</span>
@@ -194,7 +140,7 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="./imgs/image-3.png" alt="Communauté wolof" class="slide-bg">
+                <img src="./imgs/banner-3.jpg" alt="Communauté wolof" class="slide-bg">
                 <div class="hero-text-container">
                     <div class="slide-content">
                         <span class="slide-badge" data-aos="fade-down">Communauté</span>
@@ -275,7 +221,7 @@
                     <div class="media-content">
                         <div class="image-wrapper active" data-media-content="image">
                             <div class="pattern-bg"></div>
-                            <img src="./imgs/image-2.png" alt="Notre équipe" class="main-image">
+                            <img src="./imgs/banner-1.png" alt="Notre équipe" class="main-image">
                             <div class="experience-badge">
                                 <span class="number">10</span>
                                 <span class="text">ans d'expertise<br>pédagogique</span>
@@ -284,7 +230,7 @@
                         <div class="video-wrapper" data-media-content="video">
                             <div class="pattern-bg"></div>
                             <div class="video-container">
-                                <video poster="./imgs/image-3.png" class="main-video">
+                                <video poster="./imgs/banner-2.png" class="main-video">
                                     <source src="https://example.com/video-presentation-wolof.mp4" type="video/mp4">
                                     Votre navigateur ne supporte pas la lecture de vidéos.
                                 </video>
@@ -379,7 +325,7 @@
         <div class="course-grid">
             <div class="course-card" data-aos="fade-up" data-aos-delay="200" data-category="debutant">
                 <div class="course-badge">Populaire</div>
-                <img src="./imgs/image-2.png" alt="Cours débutant">
+                <img src="./imgs/banner-1.png" alt="Cours débutant">
                 <div class="course-content">
                     <div class="course-tags">
                         <span class="tag">Débutant</span>
@@ -396,7 +342,7 @@
             </div>
             <div class="course-card" data-aos="fade-up" data-aos-delay="300" data-category="intermediaire">
                 <div class="course-badge">Nouveau</div>
-                <img src="./imgs/image-2.png" alt="Cours intermédiaire">
+                <img src="./imgs/banner-2.png" alt="Cours intermédiaire">
                 <div class="course-content">
                     <div class="course-tags">
                         <span class="tag">Intermédiaire</span>
@@ -412,7 +358,7 @@
                 </div>
             </div>
             <div class="course-card" data-aos="fade-up" data-aos-delay="400" data-category="avance">
-                <img src="./imgs/image-2.png" alt="Cours avancé">
+                <img src="./imgs/banner-3.jpg" alt="Cours avancé">
                 <div class="course-content">
                     <div class="course-tags">
                         <span class="tag">Avancé</span>
@@ -474,7 +420,7 @@
                     </div>
                     <div class="testimonial-author">
                         <div class="testimonial-image">
-                            <img src="./imgs/image-2.png" alt="Marie Dubois">
+                            <img src="./imgs/avatar.png" alt="Marie Dubois">
                         </div>
                         <div class="author-info">
                             <h4>Marie Dubois</h4>
@@ -501,7 +447,7 @@
                     </div>
                     <div class="testimonial-author">
                         <div class="testimonial-image">
-                            <img src="./imgs/image-2.png" alt="John Smith">
+                            <img src="./imgs/avatar.png" alt="John Smith">
                         </div>
                         <div class="author-info">
                             <h4>John Smith</h4>
@@ -516,7 +462,7 @@
                 <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="testimonial-quote">"</div>
                     <div class="testimonial-content">
-                        <p>Grâce à Learn Wolof, j'ai pu découvrir une culture fascinante et me faire des amis du monde
+                        <p>Grâce à Kepparu Wolof, j'ai pu découvrir une culture fascinante et me faire des amis du monde
                             entier. Une expérience enrichissante !</p>
                         <div class="testimonial-stars">
                             <i class="fas fa-star"></i>
@@ -528,7 +474,7 @@
                     </div>
                     <div class="testimonial-author">
                         <div class="testimonial-image">
-                            <img src="./imgs/image-2.png" alt="Sophie Martin">
+                            <img src="./imgs/avatar.png" alt="Sophie Martin">
                         </div>
                         <div class="author-info">
                             <h4>Sophie Martin</h4>
@@ -564,7 +510,7 @@
         <div class="blog-grid">
             <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="blog-image">
-                    <img src="./imgs/image-2.png" alt="Les origines du Wolof">
+                    <img src="./imgs/banner-1.png" alt="Les origines du Wolof">
                     <span class="blog-category">Culture</span>
                 </div>
                 <div class="blog-content">
@@ -582,7 +528,7 @@
 
             <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="blog-image">
-                    <img src="./imgs/image-3.png" alt="Expressions courantes">
+                    <img src="./imgs/banner-2.png" alt="Expressions courantes">
                     <span class="blog-category">Apprentissage</span>
                 </div>
                 <div class="blog-content">
@@ -600,7 +546,7 @@
 
             <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
                 <div class="blog-image">
-                    <img src="./imgs/imaga-1.png" alt="Traditions sénégalaises">
+                    <img src="./imgs/banner-3.jpg" alt="Traditions sénégalaises">
                     <span class="blog-category">Traditions</span>
                 </div>
                 <div class="blog-content">
@@ -635,7 +581,7 @@
             <div class="partner-grid" data-aos="fade-up">
                 <div class="partner-card">
                     <div class="partner-logo">
-                        <img src="./imgs/image-2.png" alt="Université de Dakar">
+                        <img src="./imgs/banner-1.png" alt="Université de Dakar">
                     </div>
                     <div class="partner-info">
                         <h3>Université de Dakar</h3>
@@ -644,7 +590,7 @@
                 </div>
                 <div class="partner-card">
                     <div class="partner-logo">
-                        <img src="./imgs/image-2.png" alt="Alliance Française">
+                        <img src="./imgs/banner-2.png" alt="Alliance Française">
                     </div>
                     <div class="partner-info">
                         <h3>Alliance Française</h3>
@@ -653,7 +599,7 @@
                 </div>
                 <div class="partner-card">
                     <div class="partner-logo">
-                        <img src="./imgs/image-2.png" alt="Ministère de l'Éducation">
+                        <img src="./imgs/banner-3.jpg" alt="Ministère de l'Éducation">
                     </div>
                     <div class="partner-info">
                         <h3>Ministère de l'Éducation</h3>
@@ -662,7 +608,7 @@
                 </div>
                 <div class="partner-card">
                     <div class="partner-logo">
-                        <img src="./imgs/image-2.png" alt="Institut Culturel">
+                        <img src="./imgs/banner-1.png" alt="Institut Culturel">
                     </div>
                     <div class="partner-info">
                         <h3>Institut Culturel</h3>
@@ -685,7 +631,7 @@
         <div class="footer-content">
             <div class="footer-main">
                 <div class="footer-brand">
-                    <h3>Learn Wolof</h3>
+                    <h3>Kepparu Wolof</h3>
                     <p>La première plateforme d'apprentissage du Wolof en ligne. Découvrez la richesse de la langue et
                         de la culture sénégalaise.</p>
                     <div class="social-links">
@@ -759,7 +705,7 @@
         </div>
         <div class="footer-bottom">
             <div class="footer-info">
-                <p>&copy; 2025 Learn Wolof. Tous droits réservés.</p>
+                <p>&copy; 2025 Kepparu Wolof. Tous droits réservés.</p>
                 <div class="footer-bottom-links">
                     <a href="#">Mentions légales</a>
                     <span class="separator">•</span>
@@ -774,12 +720,6 @@
     <script src="animations.js"></script>
     <script src="slider.js"></script>
     <script src="script.js"></script>
-    <script src="particles.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            particlesJS('hero-particles');
-        });
-    </script>
 </body>
 
 </html>
